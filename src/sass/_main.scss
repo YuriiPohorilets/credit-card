@@ -1,0 +1,170 @@
+body {
+  font-family: 'Prompt', sans-serif;
+  font-size: 18px;
+  color: #363636;
+
+  background-color: #c2ecff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 100%;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 600px;
+}
+
+.wrapper {
+  position: relative;
+
+  padding-top: 150px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+
+  background-color: #fff;
+
+  border-radius: 15px;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  padding: 35px;
+  width: 500px;
+  height: 286px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: #d2d2d2;
+  background-image: url('../images/bg-card.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 15px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__body {
+  width: 100%;
+  // background-color: red;
+}
+
+.card__number {
+  padding: 9px 5px;
+  min-height: 63px;
+  font-size: 38px;
+  color: rgba(50, 50, 50, 1);
+
+  transition: 300ms;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__holder {
+  padding: 3px;
+
+  min-width: 200px;
+  max-width: 320px;
+  min-height: 27px;
+  transition: 300ms;
+}
+
+.card__month,
+.card__yeare {
+  padding: 2px;
+
+  transition: 300ms;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  margin-bottom: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form__input {
+  margin-top: 5px;
+  padding: 5px 20px;
+  height: 40px;
+
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #000;
+
+  text-transform: uppercase;
+}
+
+.form__date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.data__select {
+  margin-right: 10px;
+
+  width: 150px;
+  height: 40px;
+
+  &:nth-of-type(2) {
+    margin-right: 0px;
+  }
+}
+
+.form__cvv {
+  padding: 10px;
+  width: 150px;
+}
+
+.form__cvv--label {
+  margin-bottom: 0;
+}
+
+.form__btn {
+  width: 100%;
+  height: 40px;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.on-focus {
+  outline: 3px solid #fff;
+  border-radius: 5px;
+}

@@ -1,0 +1,110 @@
+<main class="main">
+  <section class="section">
+    <div class="wrapper container">
+      <div class="card">
+        <div class="card__header">
+          <div class="card__chip">
+            <img src="./images/download.png" alt="card chip" width="50" height="50" />
+          </div>
+          <div class="card__system">VISA</div>
+        </div>
+
+        <div class="card__body">
+          <div class="card__number" data-name="card-number">1234 1234 1234 1234</div>
+        </div>
+
+        <div class="card__footer">
+          <div class="card__holder-box">
+            <div class="card__title">Card holder</div>
+            <div class="card__holder" data-name="card-holders">Some Name</div>
+          </div>
+
+          <div class="card__date">
+            <div class="card__title">Expires</div>
+            <span class="card__month" data-name="card-month">12</span>
+            /
+            <span class="card__year" data-name="card-year">12</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="form">
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label">
+              Card number
+              <input
+                class="form__number form__input"
+                id="card-number"
+                name="card-number"
+                type="text"
+                maxlength="16"
+              />
+            </label>
+          </li>
+
+          <li class="form__item">
+            <label class="form__label">
+              Card Holders
+              <input
+                class="form__holders form__input"
+                id="card-holders"
+                name="card-holders"
+                type="text"
+                maxlength="22"
+              />
+            </label>
+          </li>
+
+          <div class="form__date">
+            <div class="date__wrapper">
+              <label class="form__label label__date" for="card-date">Expiration Date</label>
+              <select class="data__select" name="card-month" id="card-month">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+
+              <select class="data__select" name="card-year" id="card-year">
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+              </select>
+            </div>
+
+            <label class="form__label form__cvv--label">
+              CVV
+              <input
+                class="form__cvv form__input"
+                id="card-cvv"
+                name="card-cvv"
+                type="text"
+                maxlength="3"
+              />
+            </label>
+          </div>
+        </ul>
+
+        <button class="form__btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+</main>
